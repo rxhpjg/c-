@@ -24,6 +24,16 @@ int main()
     {
         printf("%10f",a[i]);
     }
-
+    printf("\n");
+    for(i=0;i<(10-1)/2;i++)
+    {
+        temp=a[i];
+        a[i]=a[9-i];
+        a[9-i]=temp;
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%f\n",a[i]);
+    }
     return 0;
 }
